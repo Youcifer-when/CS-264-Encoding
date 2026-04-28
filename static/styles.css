@@ -1,114 +1,202 @@
 
-<!-- Header + Links styles -->
 
-a{
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-a:link{
-     color: white;
-    }
-
-a:visited{
-      color:white;
-      }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-<!-- End of Header + Link styles -->
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    .index-base {
-      max-width: 800px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-    }
-
-    section {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    label {
-      display: block;
-      text-align: center;
-      margin-bottom: 6px;
-      margin-top: 6px;
-      font-weight: bold;
-    }
-
-    input, textarea, select, button {
-      display: flex;
-      width: 60%;
-      padding: 10px;
-      justify-content: center;
-      margin: auto;
-      margin-bottom: 15px;
-      font-size: 14px;
-    }
-
-    button {
-      background-color: #111;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      color: #777;
-    }
-
-<!-- about page styles -->
-.about-box
-{
- max-width: 800px;
-      margin: 30px auto;
-      background: gray;
-      padding: 25px;
-      border-radius: 8px;
-    align-self: center;
-    align-items: center;    
-justify-content: center;
+/* Fixed Cipher History table so now the text is visible */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: black; 
 }
 
-/* making the boxes uniform (i used this on my copy of the css) */
-textarea, 
-select, 
-input[type="text"], 
-input[type="number"] {
-    display: flex;
-    width: 60%;
-    box-sizing: border-box; /* This apparently makes it uniform */
-    padding: 10px;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 16px;
-    resize: vertical;
-    min-height: 35px
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: black; 
+}
+
+
+table button {
+  background: #e2e8f0; 
+  color: #111;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+table button:hover {
+  background: #cbd5e1;
+}
+
+
+section button {
+  background: #3b82f6; 
+  color: white;
+}
+
+section button:hover {
+  background: #2563eb; 
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #1e293b;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+#key-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(56,189,248,0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+
+.about-box {
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.about-box img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.about-box h1 {
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  color: #cbd5f5;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    padding: 8px 14px;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
