@@ -54,8 +54,8 @@ def process_cipher():
     # Send the final string back to the webpage
     return jsonify({'result': result}) 
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+# if __name__ == '__main__':
+#     app.run(debug=True, port=5001)
 
 if __name__ == '__main__':
     app.run(debug=True)
